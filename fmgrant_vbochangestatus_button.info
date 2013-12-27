@@ -1,0 +1,6 @@
+name = Change Grant Status Button
+description = overrides vbo 'modify entity values' button text
+core = 7.x
+
+dependencies[] = views_bulk_operations
+dependencies[] = redhen_org
