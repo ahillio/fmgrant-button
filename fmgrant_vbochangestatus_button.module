@@ -3,14 +3,14 @@
  * Implements hook_form_alter().
  */
 function fmgrant_vbochangestatus_button_form_alter(&$form, &$form_state, $form_id) {
-  drupal_set_message($form_id);
+  dpm($form_id);
 
-  #krumo($form);
+  //krumo($form);
   switch ($form_id) {
-    case 'edit_actionviews_bulk_operations_modify_action' :
-      #krumo($form);
-      $form['element']['#value'] = t('Update status of selected grants');
-
+    case 'views_form_grants_page' :
+      //krumo($form);
+      dpm($form);
+      $form['views_form_views_form_submit']['#submit'] = t('Update status of selected grants');
     break;
   }
 }

@@ -1,0 +1,7 @@
+<?php
+function fmgrant_vbochangestatus_button_install() {
+  db_update('system')
+    ->fields(array('weight' => 500))
+    ->condition('name', '[fmgrant_vbochangestatus_button]', '=')
+    ->execute();
+}
