@@ -6,8 +6,8 @@ function fmgrant_vbochangestatus_button_form_alter(&$form, &$form_state, $form_i
   //dpm($form_id);
   switch ($form_id) {
     case 'views_form_grants_page' :
-      dpm($form);
       $form['select']['action::views_bulk_operations_modify_action']['#value'] = t('Update status of selected grants');
+      //dpm($form);
     break;
   }
 }
